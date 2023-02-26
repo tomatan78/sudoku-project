@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body onload="startGame()">
+    <div id="sudokuMainDiv">
+        <table class="sudokuTables" id="sudokuTable1">
+            <tr class="soudokuTr">
+                <td id="td1_1" class="sudoku" onclick="switchCurrentNum(1)">1</td>
+                <td id="td1_2" class="sudoku" onclick="switchCurrentNum(2)">5</td>
+                <td id="td1_3" class="sudokuRightBold" onclick="switchCurrentNum(3)">2</td>
+                <td id="td1_4" class="sudoku" onclick="switchCurrentNum(4)">4</td>
+                <td id="td1_5" class="sudoku" onclick="switchCurrentNum(5)">8</td>
+                <td id="td1_6" class="sudokuRightBold" onclick="switchCurrentNum(6)">9</td>
+                <td id="td1_7" class="sudoku" onclick="switchCurrentNum(7)">3</td>
+                <td id="td1_8" class="sudoku" onclick="switchCurrentNum(8)">7</td>
+                <td id="td1_9" class="sudoku" onclick="switchCurrentNum(9)">6</td>
+
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td1_10" class="sudoku" onclick="switchCurrentNum(10)">7</td>
+                <td id="td1_11" class="sudoku" onclick="switchCurrentNum(11)">3</td>
+                <td id="td1_12" class="sudokuRightBold" onclick="switchCurrentNum(12)">9</td>
+                <td id="td1_13" class="sudoku" onclick="switchCurrentNum(13)">2</td>
+                <td id="td1_14" class="sudoku" onclick="switchCurrentNum(14)">5</td>
+                <td id="td1_15" class="sudokuRightBold" onclick="switchCurrentNum(15)">6</td>
+                <td id="td1_16" class="sudoku" onclick="switchCurrentNum(16)">8</td>
+                <td id="td1_17" class="sudoku" onclick="switchCurrentNum(17)">4</td>
+                <td id="td1_18" class="sudoku" onclick="switchCurrentNum(18)">1</td>
+            </tr>
+            <tr class="sudokuBotoomBold">
+                <td id="td1_19" class="sudoku" onclick="switchCurrentNum(19)">4</td>
+                <td id="td1_20" class="sudoku" onclick="switchCurrentNum(20)">6</td>
+                <td id="td1_21" class="sudokuRightBold" onclick="switchCurrentNum(21)">8</td>
+                <td id="td1_22" class="sudoku" onclick="switchCurrentNum(22)">3</td>
+                <td id="td1_23" class="sudoku" onclick="switchCurrentNum(23)">7</td>
+                <td id="td1_24" class="sudokuRightBold" onclick="switchCurrentNum(24)">1</td>
+                <td id="td1_25" class="sudoku" onclick="switchCurrentNum(25)">2</td>
+                <td id="td1_26" class="sudoku" onclick="switchCurrentNum(26)">9</td>
+                <td id="td1_27" class="sudoku" onclick="switchCurrentNum(27)">5</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td1_28" class="sudoku" onclick="switchCurrentNum(28)">3</td>
+                <td id="td1_29" class="sudoku" onclick="switchCurrentNum(29)">8</td>
+                <td id="td1_30" class="sudokuRightBold" onclick="switchCurrentNum(30)">7</td>
+                <td id="td1_31" class="sudoku" onclick="switchCurrentNum(31)">1</td>
+                <td id="td1_32" class="sudoku" onclick="switchCurrentNum(32)">2</td>
+                <td id="td1_33" class="sudokuRightBold" onclick="switchCurrentNum(33)">4</td>
+                <td id="td1_34" class="sudoku" onclick="switchCurrentNum(34)">6</td>
+                <td id="td1_35" class="sudoku" onclick="switchCurrentNum(35)">5</td>
+                <td id="td1_36" class="sudoku" onclick="switchCurrentNum(36)">9</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td1_37" class="sudoku" onclick="switchCurrentNum(37)">5</td>
+                <td id="td1_38" class="sudoku" onclick="switchCurrentNum(38)">9</td>
+                <td id="td1_39" class="sudokuRightBold" onclick="switchCurrentNum(39)">1</td>
+                <td id="td1_40" class="sudoku" onclick="switchCurrentNum(40)">7</td>
+                <td id="td1_41" class="sudoku" onclick="switchCurrentNum(41)">6</td>
+                <td id="td1_42" class="sudokuRightBold" onclick="switchCurrentNum(42)">3</td>
+                <td id="td1_43" class="sudoku" onclick="switchCurrentNum(43)">4</td>
+                <td id="td1_44" class="sudoku" onclick="switchCurrentNum(44)">2</td>
+                <td id="td1_45" class="sudoku" onclick="switchCurrentNum(45)">8</td>
+            </tr>
+            <tr class="sudokuBotoomBold">
+                <td id="td1_46" class="sudoku" onclick="switchCurrentNum(46)">2</td>
+                <td id="td1_47" class="sudoku" onclick="switchCurrentNum(47)">4</td>
+                <td id="td1_48" class="sudokuRightBold" onclick="switchCurrentNum(48)">6</td>
+                <td id="td1_49" class="sudoku" onclick="switchCurrentNum(49)">8</td>
+                <td id="td1_50" class="sudoku" onclick="switchCurrentNum(50)">9</td>
+                <td id="td1_51" class="sudokuRightBold" onclick="switchCurrentNum(51)">5</td>
+                <td id="td1_52" class="sudoku" onclick="switchCurrentNum(52)">7</td>
+                <td id="td1_53" class="sudoku" onclick="switchCurrentNum(53)">1</td>
+                <td id="td1_54" class="sudoku" onclick="switchCurrentNum(54)">3</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td1_55" class="sudoku" onclick="switchCurrentNum(55)">9</td>
+                <td id="td1_56" class="sudoku" onclick="switchCurrentNum(56)">1</td>
+                <td id="td1_57" class="sudokuRightBold" onclick="switchCurrentNum(57)">4</td>
+                <td id="td1_58" class="sudoku" onclick="switchCurrentNum(58)">6</td>
+                <td id="td1_59" class="sudoku" onclick="switchCurrentNum(59)">3</td>
+                <td id="td1_60" class="sudokuRightBold" onclick="switchCurrentNum(60)">7</td>
+                <td id="td1_61" class="sudoku" onclick="switchCurrentNum(61)">5</td>
+                <td id="td1_62" class="sudoku" onclick="switchCurrentNum(62)">8</td>
+                <td id="td1_63" class="sudoku" onclick="switchCurrentNum(63)">2</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td1_64" class="sudoku" onclick="switchCurrentNum(64)">6</td>
+                <td id="td1_65" class="sudoku" onclick="switchCurrentNum(65)">2</td>
+                <td id="td1_66" class="sudokuRightBold" onclick="switchCurrentNum(66)">5</td>
+                <td id="td1_67" class="sudoku" onclick="switchCurrentNum(67)">9</td>
+                <td id="td1_68" class="sudoku" onclick="switchCurrentNum(68)">4</td>
+                <td id="td1_69" class="sudokuRightBold" onclick="switchCurrentNum(69)">8</td>
+                <td id="td1_70" class="sudoku" onclick="switchCurrentNum(70)">1</td>
+                <td id="td1_71" class="sudoku" onclick="switchCurrentNum(71)">3</td>
+                <td id="td1_72" class="sudoku" onclick="switchCurrentNum(72)">7</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td1_73" class="sudoku" onclick="switchCurrentNum(73)">8</td>
+                <td id="td1_74" class="sudoku" onclick="switchCurrentNum(74)">7</td>
+                <td id="td1_75" class="sudokuRightBold" onclick="switchCurrentNum(75)">3</td>
+                <td id="td1_76" class="sudoku" onclick="switchCurrentNum(76)">5</td>
+                <td id="td1_77" class="sudoku" onclick="switchCurrentNum(77)">1</td>
+                <td id="td1_78" class="sudokuRightBold" onclick="switchCurrentNum(78)">2</td>
+                <td id="td1_79" class="sudoku" onclick="switchCurrentNum(79)">9</td>
+                <td id="td1_80" class="sudoku" onclick="switchCurrentNum(80)">6</td>
+                <td id="td1_81" class="sudoku" onclick="switchCurrentNum(81)">4</td>
+            </tr>
+        </table>
+
+        <!-- _______________________________________________________________________________________________ -->
+
+        <table class="sudokuTables" id="sudokuTable2">
+            <tr class="soudokuTr">
+                <td id="td2_1" class="sudoku" onclick="switchCurrentNum(1)">7</td>
+                <td id="td2_2" class="sudoku" onclick="switchCurrentNum(2)">6</td>
+                <td id="td2_3" class="sudokuRightBold" onclick="switchCurrentNum(3)">5</td>
+                <td id="td2_4" class="sudoku" onclick="switchCurrentNum(4)">8</td>
+                <td id="td2_5" class="sudoku" onclick="switchCurrentNum(5)">4</td>
+                <td id="td2_6" class="sudokuRightBold" onclick="switchCurrentNum(6)">3</td>
+                <td id="td2_7" class="sudoku" onclick="switchCurrentNum(7)">2</td>
+                <td id="td2_8" class="sudoku" onclick="switchCurrentNum(8)">1</td>
+                <td id="td2_9" class="sudoku" onclick="switchCurrentNum(9)">9</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td2_10" class="sudoku" onclick="switchCurrentNum(10)">4</td>
+                <td id="td2_11" class="sudoku" onclick="switchCurrentNum(11)">1</td>
+                <td id="td2_12" class="sudokuRightBold" onclick="switchCurrentNum(12)">2</td>
+                <td id="td2_13" class="sudoku" onclick="switchCurrentNum(13)">6</td>
+                <td id="td2_14" class="sudoku" onclick="switchCurrentNum(14)">9</td>
+                <td id="td2_15" class="sudokuRightBold" onclick="switchCurrentNum(15)">7</td>
+                <td id="td2_16" class="sudoku" onclick="switchCurrentNum(16)">8</td>
+                <td id="td2_17" class="sudoku" onclick="switchCurrentNum(17)">5</td>
+                <td id="td2_18" class="sudoku" onclick="switchCurrentNum(18)">3</td>
+            </tr>
+            <tr class="sudokuBotoomBold">
+                <td id="td2_19" class="sudoku" onclick="switchCurrentNum(19)">9</td>
+                <td id="td2_20" class="sudoku" onclick="switchCurrentNum(20)">3</td>
+                <td id="td2_21" class="sudokuRightBold" onclick="switchCurrentNum(21)">8</td>
+                <td id="td2_22" class="sudoku" onclick="switchCurrentNum(22)">2</td>
+                <td id="td2_23" class="sudoku" onclick="switchCurrentNum(23)">5</td>
+                <td id="td2_24" class="sudokuRightBold" onclick="switchCurrentNum(24)">1</td>
+                <td id="td2_25" class="sudoku" onclick="switchCurrentNum(25)">7</td>
+                <td id="td2_26" class="sudoku" onclick="switchCurrentNum(26)">6</td>
+                <td id="td2_27" class="sudoku" onclick="switchCurrentNum(27)">4</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td2_28" class="sudoku" onclick="switchCurrentNum(28)">3</td>
+                <td id="td2_29" class="sudoku" onclick="switchCurrentNum(29)">2</td>
+                <td id="td2_30" class="sudokuRightBold" onclick="switchCurrentNum(30)">4</td>
+                <td id="td2_31" class="sudoku" onclick="switchCurrentNum(31)">1</td>
+                <td id="td2_32" class="sudoku" onclick="switchCurrentNum(32)">8</td>
+                <td id="td2_33" class="sudokuRightBold" onclick="switchCurrentNum(33)">6</td>
+                <td id="td2_34" class="sudoku" onclick="switchCurrentNum(34)">5</td>
+                <td id="td2_35" class="sudoku" onclick="switchCurrentNum(35)">9</td>
+                <td id="td2_36" class="sudoku" onclick="switchCurrentNum(36)">7</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td2_37" class="sudoku" onclick="switchCurrentNum(37)">1</td>
+                <td id="td2_38" class="sudoku" onclick="switchCurrentNum(38)">8</td>
+                <td id="td2_39" class="sudokuRightBold" onclick="switchCurrentNum(39)">9</td>
+                <td id="td2_40" class="sudoku" onclick="switchCurrentNum(40)">5</td>
+                <td id="td2_41" class="sudoku" onclick="switchCurrentNum(41)">7</td>
+                <td id="td2_42" class="sudokuRightBold" onclick="switchCurrentNum(42)">4</td>
+                <td id="td2_43" class="sudoku" onclick="switchCurrentNum(43)">6</td>
+                <td id="td2_44" class="sudoku" onclick="switchCurrentNum(44)">3</td>
+                <td id="td2_45" class="sudoku" onclick="switchCurrentNum(45)">2</td>
+            </tr>
+            <tr class="sudokuBotoomBold">
+                <td id="td2_46" class="sudoku" onclick="switchCurrentNum(46)">6</td>
+                <td id="td2_47" class="sudoku" onclick="switchCurrentNum(47)">5</td>
+                <td id="td2_48" class="sudokuRightBold" onclick="switchCurrentNum(48)">8</td>
+                <td id="td2_49" class="sudoku" onclick="switchCurrentNum(49)">9</td>
+                <td id="td2_50" class="sudoku" onclick="switchCurrentNum(50)">3</td>
+                <td id="td2_51" class="sudokuRightBold" onclick="switchCurrentNum(51)">2</td>
+                <td id="td2_52" class="sudoku" onclick="switchCurrentNum(52)">4</td>
+                <td id="td2_53" class="sudoku" onclick="switchCurrentNum(53)">8</td>
+                <td id="td2_54" class="sudoku" onclick="switchCurrentNum(54)">1</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td2_55" class="sudoku" onclick="switchCurrentNum(55)">8</td>
+                <td id="td2_56" class="sudoku" onclick="switchCurrentNum(56)">7</td>
+                <td id="td2_57" class="sudokuRightBold" onclick="switchCurrentNum(57)">1</td>
+                <td id="td2_58" class="sudoku" onclick="switchCurrentNum(58)">4</td>
+                <td id="td2_59" class="sudoku" onclick="switchCurrentNum(59)">6</td>
+                <td id="td2_60" class="sudokuRightBold" onclick="switchCurrentNum(60)">9</td>
+                <td id="td2_61" class="sudoku" onclick="switchCurrentNum(61)">3</td>
+                <td id="td2_62" class="sudoku" onclick="switchCurrentNum(62)">2</td>
+                <td id="td2_63" class="sudoku" onclick="switchCurrentNum(63)">5</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td2_64" class="sudoku" onclick="switchCurrentNum(64)">5</td>
+                <td id="td2_65" class="sudoku" onclick="switchCurrentNum(65)">9</td>
+                <td id="td2_66" class="sudokuRightBold" onclick="switchCurrentNum(66)">3</td>
+                <td id="td2_67" class="sudoku" onclick="switchCurrentNum(67)">7</td>
+                <td id="td2_68" class="sudoku" onclick="switchCurrentNum(68)">2</td>
+                <td id="td2_69" class="sudokuRightBold" onclick="switchCurrentNum(69)">8</td>
+                <td id="td2_70" class="sudoku" onclick="switchCurrentNum(70)">1</td>
+                <td id="td2_71" class="sudoku" onclick="switchCurrentNum(71)">4</td>
+                <td id="td2_72" class="sudoku" onclick="switchCurrentNum(72)">6</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td2_73" class="sudoku" onclick="switchCurrentNum(73)">2</td>
+                <td id="td2_74" class="sudoku" onclick="switchCurrentNum(74)">4</td>
+                <td id="td2_75" class="sudokuRightBold" onclick="switchCurrentNum(75)">6</td>
+                <td id="td2_76" class="sudoku" onclick="switchCurrentNum(76)">3</td>
+                <td id="td2_77" class="sudoku" onclick="switchCurrentNum(77)">1</td>
+                <td id="td2_78" class="sudokuRightBold" onclick="switchCurrentNum(78)">5</td>
+                <td id="td2_79" class="sudoku" onclick="switchCurrentNum(79)">9</td>
+                <td id="td2_80" class="sudoku" onclick="switchCurrentNum(80)">7</td>
+                <td id="td2_81" class="sudoku" onclick="switchCurrentNum(81)">8</td>
+            </tr>
+        </table>
+
+        <!-- ____________________________________________________________________ -->
+        <table class="sudokuTables" id="sudokuTable3">
+            <tr class="soudokuTr">
+                <td id="td3_1" class="sudoku" onclick="switchCurrentNum(1)">9</td>
+                <td id="td3_2" class="sudoku" onclick="switchCurrentNum(2)">4</td>
+                <td id="td3_3" class="sudokuRightBold" onclick="switchCurrentNum(3)">2</td>
+                <td id="td3_4" class="sudoku" onclick="switchCurrentNum(4)">1</td>
+                <td id="td3_5" class="sudoku" onclick="switchCurrentNum(5)">6</td>
+                <td id="td3_6" class="sudokuRightBold" onclick="switchCurrentNum(6)">3</td>
+                <td id="td3_7" class="sudoku" onclick="switchCurrentNum(7)">8</td>
+                <td id="td3_8" class="sudoku" onclick="switchCurrentNum(8)">5</td>
+                <td id="td3_9" class="sudoku" onclick="switchCurrentNum(9)">7</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td3_10" class="sudoku" onclick="switchCurrentNum(10)">5</td>
+                <td id="td3_11" class="sudoku" onclick="switchCurrentNum(11)">3</td>
+                <td id="td3_12" class="sudokuRightBold" onclick="switchCurrentNum(12)">6</td>
+                <td id="td3_13" class="sudoku" onclick="switchCurrentNum(13)">2</td>
+                <td id="td3_14" class="sudoku" onclick="switchCurrentNum(14)">8</td>
+                <td id="td3_15" class="sudokuRightBold" onclick="switchCurrentNum(15)">7</td>
+                <td id="td3_16" class="sudoku" onclick="switchCurrentNum(16)">9</td>
+                <td id="td3_17" class="sudoku" onclick="switchCurrentNum(17)">4</td>
+                <td id="td3_18" class="sudoku" onclick="switchCurrentNum(18)">1</td>
+            </tr>
+            <tr class="sudokuBotoomBold">
+                <td id="td3_19" class="sudoku" onclick="switchCurrentNum(19)">8</td>
+                <td id="td3_20" class="sudoku" onclick="switchCurrentNum(20)">7</td>
+                <td id="td3_21" class="sudokuRightBold" onclick="switchCurrentNum(21)">1</td>
+                <td id="td3_22" class="sudoku" onclick="switchCurrentNum(22)">9</td>
+                <td id="td3_23" class="sudoku" onclick="switchCurrentNum(23)">5</td>
+                <td id="td3_24" class="sudokuRightBold" onclick="switchCurrentNum(24)">4</td>
+                <td id="td3_25" class="sudoku" onclick="switchCurrentNum(25)">2</td>
+                <td id="td3_26" class="sudoku" onclick="switchCurrentNum(26)">3</td>
+                <td id="td3_27" class="sudoku" onclick="switchCurrentNum(27)">6</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td3_28" class="sudoku" onclick="switchCurrentNum(28)">3</td>
+                <td id="td3_29" class="sudoku" onclick="switchCurrentNum(29)">2</td>
+                <td id="td3_30" class="sudokuRightBold" onclick="switchCurrentNum(30)">7</td>
+                <td id="td3_31" class="sudoku" onclick="switchCurrentNum(31)">8</td>
+                <td id="td3_32" class="sudoku" onclick="switchCurrentNum(32)">1</td>
+                <td id="td3_33" class="sudokuRightBold" onclick="switchCurrentNum(33)">9</td>
+                <td id="td3_34" class="sudoku" onclick="switchCurrentNum(34)">4</td>
+                <td id="td3_35" class="sudoku" onclick="switchCurrentNum(35)">6</td>
+                <td id="td3_36" class="sudoku" onclick="switchCurrentNum(36)">5</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td3_37" class="sudoku" onclick="switchCurrentNum(37)">1</td>
+                <td id="td3_38" class="sudoku" onclick="switchCurrentNum(38)">5</td>
+                <td id="td3_39" class="sudokuRightBold" onclick="switchCurrentNum(39)">4</td>
+                <td id="td3_40" class="sudoku" onclick="switchCurrentNum(40)">3</td>
+                <td id="td3_41" class="sudoku" onclick="switchCurrentNum(41)">2</td>
+                <td id="td3_42" class="sudokuRightBold" onclick="switchCurrentNum(42)">6</td>
+                <td id="td3_43" class="sudoku" onclick="switchCurrentNum(43)">7</td>
+                <td id="td3_44" class="sudoku" onclick="switchCurrentNum(44)">9</td>
+                <td id="td3_45" class="sudoku" onclick="switchCurrentNum(45)">8</td>
+            </tr>
+            <tr class="sudokuBotoomBold">
+                <td id="td3_46" class="sudoku" onclick="switchCurrentNum(46)">6</td>
+                <td id="td3_47" class="sudoku" onclick="switchCurrentNum(47)">9</td>
+                <td id="td3_48" class="sudokuRightBold" onclick="switchCurrentNum(48)">8</td>
+                <td id="td3_49" class="sudoku" onclick="switchCurrentNum(49)">7</td>
+                <td id="td3_50" class="sudoku" onclick="switchCurrentNum(50)">4</td>
+                <td id="td3_51" class="sudokuRightBold" onclick="switchCurrentNum(51)">5</td>
+                <td id="td3_52" class="sudoku" onclick="switchCurrentNum(52)">1</td>
+                <td id="td3_53" class="sudoku" onclick="switchCurrentNum(53)">2</td>
+                <td id="td3_54" class="sudoku" onclick="switchCurrentNum(54)">3</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td3_55" class="sudoku" onclick="switchCurrentNum(55)">2</td>
+                <td id="td3_56" class="sudoku" onclick="switchCurrentNum(56)">6</td>
+                <td id="td3_57" class="sudokuRightBold" onclick="switchCurrentNum(57)">5</td>
+                <td id="td3_58" class="sudoku" onclick="switchCurrentNum(58)">4</td>
+                <td id="td3_59" class="sudoku" onclick="switchCurrentNum(59)">7</td>
+                <td id="td3_60" class="sudokuRightBold" onclick="switchCurrentNum(60)">1</td>
+                <td id="td3_61" class="sudoku" onclick="switchCurrentNum(61)">3</td>
+                <td id="td3_62" class="sudoku" onclick="switchCurrentNum(62)">8</td>
+                <td id="td3_63" class="sudoku" onclick="switchCurrentNum(63)">9</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td3_64" class="sudoku" onclick="switchCurrentNum(64)">7</td>
+                <td id="td3_65" class="sudoku" onclick="switchCurrentNum(65)">8</td>
+                <td id="td3_66" class="sudokuRightBold" onclick="switchCurrentNum(66)">9</td>
+                <td id="td3_67" class="sudoku" onclick="switchCurrentNum(67)">6</td>
+                <td id="td3_68" class="sudoku" onclick="switchCurrentNum(68)">3</td>
+                <td id="td3_69" class="sudokuRightBold" onclick="switchCurrentNum(69)">2</td>
+                <td id="td3_70" class="sudoku" onclick="switchCurrentNum(70)">5</td>
+                <td id="td3_71" class="sudoku" onclick="switchCurrentNum(71)">1</td>
+                <td id="td3_72" class="sudoku" onclick="switchCurrentNum(72)">4</td>
+            </tr>
+            <tr class="soudokuTr">
+                <td id="td3_73" class="sudoku" onclick="switchCurrentNum(73)">4</td>
+                <td id="td3_74" class="sudoku" onclick="switchCurrentNum(74)">1</td>
+                <td id="td3_75" class="sudokuRightBold" onclick="switchCurrentNum(75)">3</td>
+                <td id="td3_76" class="sudoku" onclick="switchCurrentNum(76)">5</td>
+                <td id="td3_77" class="sudoku" onclick="switchCurrentNum(77)">9</td>
+                <td id="td3_78" class="sudokuRightBold" onclick="switchCurrentNum(78)">8</td>
+                <td id="td3_79" class="sudoku" onclick="switchCurrentNum(79)">6</td>
+                <td id="td3_80" class="sudoku" onclick="switchCurrentNum(80)">7</td>
+                <td id="td3_81" class="sudoku" onclick="switchCurrentNum(81)">2</td>
+            </tr>
+        </table>
+        <br>
+
+    </div>
+
+
+    <div id="numsBtnDiv">
+        <button id="btn1" class="gameBtns" onclick="setBtnNum(1)">1</button>
+        <button id="btn2" class="gameBtns" onclick="setBtnNum(2)">2</button>
+        <button id="btn3" class="gameBtns" onclick="setBtnNum(3)">3</button>
+        <button id="btn4" class="gameBtns" onclick="setBtnNum(4)">4</button>
+        <button id="btn5" class="gameBtns" onclick="setBtnNum(5)">5</button>
+        <button id="btn6" class="gameBtns" onclick="setBtnNum(6)">6</button>
+        <button id="btn7" class="gameBtns" onclick="setBtnNum(7)">7</button>
+        <button id="btn8" class="gameBtns" onclick="setBtnNum(8)">8</button>
+        <button id="btn9" class="gameBtns" onclick="setBtnNum(9)">9</button>
+        <br><br>
+    </div>
+    <div id="optionBtnDiv">
+        <button onclick="again()" class="gameBtns">Again</button>
+        <div id="timerDiv" class="gameBtns"></div>
+        <button onclick="finish()" class="gameBtns">Finish</button>
+    </div>
+    <script src='sudokuGame.js'></script>
+</body>
+
+</html>

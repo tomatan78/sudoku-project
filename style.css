@@ -1,0 +1,241 @@
+body{
+    font-family: "Potta One", cursive;
+    background-image: url("background.jpg")
+}
+
+/* -------------1st page - log in--------------- */
+
+#mainDiv{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background-color: lightskyblue;
+    padding: 10px;
+    border: 10px rgb(122, 201, 250) solid;
+    margin: auto;
+    margin-top:12%;
+    box-shadow: 2px 4px 5px 3px rgb(99, 162, 201);
+    border-radius: 5px;
+}
+
+#centerDiv{
+    position: relative; 
+    top: 5%;
+    text-align: center;
+}
+
+
+.input{
+    font-family: "Potta One", cursive;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px 3px rgba(53, 95, 121, 0.517);
+
+}
+.space{
+    height: 15px;
+}
+#logInBtn{
+    font-family: "Potta One", cursive;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px 3px rgb(99, 162, 201);
+    color: white;
+    background-color: rgb(72, 121, 169) ;
+    position: relative;
+}
+#logInBtn:hover{
+    background-color: rgba(43, 84, 125, 0.692) ;
+    box-shadow: 4px 6px 7px 5px rgba(53, 95, 121, 0.517);
+}
+#title{
+    position: relative;
+    bottom: 27px;
+    font-size: 3rem;
+    color: rgb(23, 42, 93);
+}
+
+#bot{
+    position: relative;
+    font-size: 0.9rem;
+    top: 20px;
+    left: 34%;
+    text-align: right;
+    text-decoration: none;
+}
+
+/* -------------2nd page - lvl choice--------------- */
+
+#lvlCenterDiv{
+    position: relative; 
+    top: 5%;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    background-color: lightskyblue;
+    padding: 10px;
+    border: 10px rgb(122, 201, 250) solid;
+    margin: auto;
+    margin-top:12%;
+    box-shadow: 2px 4px 5px 3px rgb(99, 162, 201);
+    border-radius: 5px;
+}
+
+
+#spanLvl{
+    color: rgba(229, 229, 229, 0.977);
+}
+
+#h1Lvl{
+    font-size: 220%;
+    position: relative;
+    top: 5%;
+    color: rgb(23, 42, 93);
+}
+
+#h3Lvl{
+    font-size: 170%;
+    position: relative;
+    top: 12%;
+    color: rgb(23, 42, 93);
+}
+
+.lvlBtns{
+    font-family: "Potta One", cursive;
+    width: 30%;
+    height: 60px;
+    border: 3px rgb(30, 44, 53) solid;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5px 3px rgb(99, 162, 201);
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(72, 121, 169) ;
+    font-weight: bold;
+    color: white;
+}
+
+.lvlBtns:hover{
+    background-color: rgba(43, 84, 125, 0.692) ;
+    box-shadow: 4px 6px 7px 5px rgba(53, 95, 121, 0.517);
+}
+
+
+
+#lvlBtnsDiv{
+    padding-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+/* -------------3nd page - Sudoku Game--------------- */
+.soudokuTr{
+    border: 1px solid black;
+    padding: 15px;
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer; 
+}
+.sudoku{
+    border: 1px solid black;
+    padding: 15px;
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer; 
+    
+}
+.sudoku:hover{
+    background-color: rgba(43, 84, 125, 0.692) ;
+}
+
+
+.sudokuRightBold{
+    padding: 15px;
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+    border-right: 3px solid black;
+}
+.sudokuRightBold:hover{
+    background-color: rgba(43, 84, 125, 0.692) ;
+}
+
+.sudokuBotoomBold{
+    border-bottom: 3px solid black;
+}
+
+
+.sudokuTables{
+    font-family: "Potta One", cursive;
+    display: none;
+    position: relative; 
+    text-align: center;
+    background-color: lightskyblue;
+    padding: 0px;
+    border: 10px rgb(122, 201, 250) solid;
+    margin: auto;
+    box-shadow: 2px 4px 5px 3px rgb(99, 162, 201);
+    border-radius: 5px;
+   
+   
+}
+
+
+#sudokuMainDiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+#numsBtnDiv{
+    font-family: "Potta One", cursive;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    margin-left: 35%;
+    margin-right: 35%;
+
+}
+
+#optionBtnDiv{
+    font-family: "Potta One", cursive;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 42%;
+    margin-right: 42%;
+
+}
+
+.gameBtns{
+    font-family: "Potta One", cursive;
+    width: 30%;
+    height: 35px;
+    border: 3px rgb(30, 44, 53) solid;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px 2px rgb(99, 162, 201);
+    cursor: pointer;
+    margin-left: 1px;
+    background-color: rgb(72, 121, 169) ;
+    font-weight: bold;
+    color: white;
+}
+
+.gameBtns:hover{
+    background-color: rgba(43, 84, 125, 0.692) ;
+    box-shadow: 4px 6px 7px 5px rgba(99, 162, 201, 0.517);
+}
+
+.gameBtns:focus{
+    background-color: rgba(43, 84, 125, 0.692) ;    
+    box-shadow: 4px 6px 7px 5px rgba(99, 162, 201, 0.517);
+}
+
+#timerDiv{
+    text-align: center;
+}
